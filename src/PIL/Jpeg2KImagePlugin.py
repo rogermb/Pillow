@@ -215,6 +215,7 @@ def _parse_jp2_header(fp):
                     hres = _res_to_dpi(hrcn, hrcd, hrce)
                     vres = _res_to_dpi(vrcn, vrcd, vrce)
                     dpi = (hres, vres)
+                    break
 
     if size is None or mode is None:
         raise SyntaxError("Malformed JP2 header")
